@@ -1,8 +1,6 @@
-/* Serve pra deixar os conteineres visiveis, tirar depois que terminar */
-* {
-  outline: 1px solid red;
+body{
+    background-color: #E6E4D5;
 }
-
 .barra_superior{
     display: flex;
     justify-content: space-between;
@@ -42,13 +40,54 @@ main{
     font-size: 150%;
     
 }
-.formulario{
+form{
     display: flex;
     flex-direction: column;
     margin-top: 100px;
-    max-width: 650px;
-    font-size: 150%;
+    max-width: 500px;
+    font-size:16px;
 }
+
+form label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
 .nome_formulario{
   display: flex;  
+  align-items: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    border: 1px solid #C1BFB9;
+    background-color: #FAFAFA;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.nome_formulario {
+    display: flex;
+    gap: 10px;
+}
+
+.nome_formulario div {
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    background-color: #5c5a2e;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
